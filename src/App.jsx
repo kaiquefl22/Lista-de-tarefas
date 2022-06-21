@@ -1,13 +1,14 @@
 import { useState } from 'react'
 
-import './App.css'
 import Tasks from './components/Tasks'
+import AddTask from './components/AddTask'
+import './App.css'
 
 function App() {
   const [tasks, setTasks] = useState([
     {
       id: '1',
-      title: 'Estudar Programação',
+      title: 'Estudar Programação2',
       completed : false,
     },   
     {
@@ -19,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <AddTask />
         <Tasks tasks={tasks}/>
       </div>
     </div>
